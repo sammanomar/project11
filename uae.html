@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Samman for data analytics and coding, KPI">
+    <meta name="keywords" content="Omar Samman, data analytics, KPI, coding">
+    <title>Omar Samman</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>   
+        <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
+        <div class="langs">
+        <a href="#" language="english" class="active">EN</a>
+        <a href="#" language="german">DE</a>
+        <a href="#" language="arabic">AR</a>
+        <a href="#" language="spanish">ES</a>
+        <a href="#" language="korean">KO</a> 
+        </div>
+        <div class="toggle"></div>
+        </header>
+        <video src="assets/videos/uae.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+        <h2 class="title">FINANCE ANALYST</h2>
+        <h3 class="description">JOHNSON CONTROLS, DUBAI</h3>
+        <p class="ddd">March, 14 2011 – May, 13 2014</p>
+        <p class="jd">
+            Prepare monthly financial reports & gaps analysis, 
+            Study and analyze sales and market transactions, 
+            Launch SMIS (Sales & Marketing Information System), 
+            Implement & conduct SMIS training campaigns in the ME region, 
+            Design, issue and edit an interactive, automated and unprecedented finance, operations and
+            business intelligence book bi weekly. The book consists of 300 pages and animated data dashboards for direct decisions making on a regional basis.
+        </p>
+        <h2 class="ttitle">Accountant</h2>
+        <h3 class="ddescription">MGCC, Sharjah</h3>
+        <p class="dddd">October, 8 2008 – March, 12 2011</p>
+        <p class="jjd">
+            Responsible for payable and receivable department, 
+            Responsible for prepayment and lubricants transactions, 
+            Prepare all types of journal vouchers, 
+            Prepare banks and supplier reconciliations, 
+            Prepare all types of petty cash for the projects, 
+            Prepare and reconcile procurement reports and suppliers analysis reports, 
+            Controller of Asphalt Invoices (Internal & External), process according to the appropriate accounting procedures.
+        </p>
+        <h2 class="tttitle">SALES & MARKETING MANAGER</h2>
+        <h3 class="dddescription">AL KHUMASYAH TURNING & WELDING, sharjah</h3>
+        <p class="ddddd">April, 08 2008 – July, 06 2008</p>
+        <p class="jjjd">
+            Manage and run all sales and marketing activities from A to Z in the startup company.
+        </p>
+        <a class="box" href="ireland.html">ireland</a>
+        <a class="boxx" href="germany.html">germany</a>
+        <a class="boxxx" href="uae.html">UAE</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/omar-samman-3a65b2267" target="_blank" rel="noopener"
+                        aria-label="Visit my linkedin page (opens in a new tab)"><img src="assets/images/l.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li><a class="ireland" href="ireland.html">Ireland</a></li>
+        <li><a class="germany" href="germany.html">Germany</a></li>
+        <li><a class="uae" href="uae.html">UAE</a></li>
+        <li><a class= "reco" href="recommendations.html">Recommendations</a></li>
+        <li><a class= "lang" href="language.html">Languages</a></li>
+        <li><a class= "cv" href="assets/images/utd.pdf" target="_blank">Download CV</a></li>
+        <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </div>    
+
+    <script>
+        let langs = document.querySelector(".langs"),
+            link = document.querySelectorAll("a"),
+            title = document.querySelector(".title"),
+            descr = document.querySelector(".description"),
+            dat = document.querySelector(".ddd"),
+            jobdescr = document.querySelector(".jd"),
+            ttitle = document.querySelector(".ttitle"),
+            ddescr = document.querySelector(".ddescription"),
+            ddat = document.querySelector(".dddd"),
+            jjobdescr = document.querySelector(".jjd"),
+            tttitle = document.querySelector(".tttitle"),
+            dddescr = document.querySelector(".dddescription"),
+            dddat = document.querySelector(".ddddd"),
+            jjjobdescr = document.querySelector(".jjjd"),
+            box = document.querySelector(".box"),
+            boxx = document.querySelector(".boxx"),
+            boxxx = document.querySelector(".boxxx"),
+            home = document.querySelector(".home"),
+            ireland = document.querySelector(".ireland"),
+            germany = document.querySelector(".germany"),
+            uae = document.querySelector(".uae"),
+            reco = document.querySelector(".reco"),
+            lang = document.querySelector(".lang"),
+            cv = document.querySelector(".cv"),
+            contact = document.querySelector(".contact");
+
+        link.forEach(el=>{
+            el.addEventListener("click", ()=>{
+                langs.querySelector(".active").classList.remove("active");
+                el.classList.add("active");
+
+                let attr = el.getAttribute("language")
+
+                title.textContent = data[attr].title
+                descr.textContent = data[attr].description
+                dat.textContent = data[attr].ddd
+                jobdescr.textContent = data[attr].jd
+                ttitle.textContent = data[attr].ttitle
+                ddescr.textContent = data[attr].ddescription
+                ddat.textContent = data[attr].dddd
+                jjobdescr.textContent = data[attr].jjd
+                tttitle.textContent = data[attr].tttitle
+                dddescr.textContent = data[attr].dddescription
+                dddat.textContent = data[attr].ddddd
+                jjjobdescr.textContent = data[attr].jjjd
+                box.textContent = data[attr].box
+                boxx.textContent = data[attr].boxx
+                boxxx.textContent = data[attr].boxxx
+                home.textContent = data[attr].home
+                ireland.textContent = data[attr].ireland
+                germany.textContent = data[attr].germany
+                uae.textContent = data[attr].uae
+                lang.textContent = data[attr].lang
+                reco.textContent = data[attr].reco
+                cv.textContent = data[attr].cv
+                contact.textContent = data[attr].contact
+            })
+        })
+
+        let data = {
+            arabic: {
+                title: "محلل مالي",
+                description: "جونسون كونترلوز، دبي",
+                ddd: "١٤ مارس ٢٠١١ - ١٣ مايو ٢٠١٤",
+                jd: ".إعداد تقارير مالية شهرية وتحليل الفجوات ، دراسة وتحليل معاملات المبيعات والسوق ، إطلاق (نظام معلومات المبيعات والتسويق) ، تنفيذ وإجراء حملات تدريبية في منطقة الشرق الأوسط على هذا البرنامج ، تصميم وإصدار وتحرير كتاب تفاعلي وآلي وغير مسبوق عن التمويل والعمليات وذكاء الأعمال كل أسبوعين. يتكون الكتاب من ٣٠٠ صفحة ولوحات بيانات متحركة لاتخاذ قرارات مباشرة على أساس إقليمي",
+                ttitle: "محاسب",
+                ddescription: "المروان للمقاولات العامة، الشارقة",
+                dddd: "٨ أكتوبر ٢٠٠٨ - ١٢ مارس ٢٠١١",
+                jjd: "مسؤول عن قسم المدفوعات والمستحقات ، مسؤول عن معاملات الدفع المسبق وزيوت التشحيم ، إعداد جميع أنواع قيود المحاسبة اليومية ، إعداد تسويات البنوك وتسويات الموردين ، إعداد جميع أنواع المصروفات النثرية للمشاريع، إعداد وتسوية تقارير المشتريات وتقارير تحليل الموردين، مراقب فواتير الإسفلت (داخلي وخارجي) وفق الإجراءات المحاسبية المناسبة.",
+                tttitle: "مدير التسويق و المبيعات",
+                dddescription: "الخماسية الهندسية للخراطة و اللحام",
+                ddddd: "٨ أبريل ٢٠٠٨ - ٦ يوليو ٢٠٠٨",
+                jjjd: ".إدارة وتشغيل جميع أنشطة المبيعات والتسويق من الألف إلى الياء في الشركة الناشئة",
+                box: "إيرلندا",
+                boxx: "ألمانيا",
+                boxxx: "الإمارات",
+                home: "الصفحة الرئيسية",
+                ireland: "إيرلندا",
+                germany: "ألمانيا",
+                uae: "الإمارات",
+                reco: "التوصيات",
+                lang: "اللغات",
+                cv: "تنزيل السيرة الذاتية",
+                contact: "التواصل"
+            },
+            english: {
+                title: "FINANCE ANALYST",
+                description: "johnson controls, dubai",
+                ddd: "March, 14 2011 – May, 13 2014",
+                jd: "Prepare monthly financial reports & gaps analysis, Study and analyze sales and market transactions, Launch SMIS (Sales & Marketing Information System), Implement & conduct SMIS training campaigns in the ME region, Design, issue and edit an interactive, automated and unprecedented finance, operations and business intelligence book bi weekly. The book consists of 300 pages and animated data dashboards for direct decisions making on a regional basis.",
+                ttitle: "Accountant",
+                ddescription: "MGCC, sharjah",
+                dddd: "October, 8 2008 – March, 12 2011",
+                jjd: "Responsible for payable and receivable department, Responsible for prepayment and lubricants transactions, Prepare all types of journal vouchers, Prepare banks and supplier reconciliations, Prepare all types of petty cash for the projects, Prepare and reconcile procurement reports and suppliers analysis reports, Controller of Asphalt Invoices (Internal & External), process according to the appropriate accounting procedures.",
+                tttitle: "sales & marketing manager",
+                dddescription: "AL KHUMASYAH TURNING & WELDING, sharjah",
+                ddddd: "April, 08 2008 – July, 06 2008",
+                jjjd: "Manage and run all sales and marketing activities from A to Z in the startup company.",
+                box: "Ireland",
+                boxx: "Germany",
+                boxxx: "UAE",
+                home: "Home",
+                ireland: "Ireland",
+                germany: "Germany",
+                uae: "UAE",
+                reco: "Recommendations",
+                lang: "Languages",
+                cv: "Download CV",
+                contact: "Contact"
+            },
+            german: {
+                title: "FINANZANALYST",
+                description: 'johnson controls, dubai',
+                ddd: "14. März 2011 – 13. Mai 2014",
+                jd: "Erstellen monatliche Finanzberichte und Lückenanalysen, Untersuchen und analysieren Verkaufs- und Markttransaktionen, Starten SMIS (Sales & Marketing Information System), Implementierung und Durchführung von SMIS-Schulungskampagnen in der ME-Region, Zweimal wöchentlich ein interaktives, automatisiertes und beispielloses Finanz-, Betriebs- und Business-Intelligence-Buch entwerfen, herausgeben und bearbeiten. Das Buch besteht aus 300 Seiten und animierten Daten-Dashboards für direkte Entscheidungen auf regionaler Basis.",
+                ttitle: "Buchhalter",
+                ddescription: 'MGCC, sharjah',
+                dddd: "8. Oktober 2008 – 12. März 2011",
+                jjd: "Verantwortlich für die Kreditoren- und Debitorenabteilung. Verantwortlich für Vorauszahlungen und Schmiermitteltransaktionen. Bereiten alle Arten von Journalbelege vor. Bereiten Banken- und Lieferantenabstimmungen vor. Bereiten alle Arten von Portokassen für die Projekte vor. Erstellung und Abstimmung von Beschaffungsberichten und Lieferantenanalyseberichten. Controller von Asphalt-Rechnungen (intern und extern), Verarbeitung gemäß den entsprechenden Buchhaltungsverfahren.",
+                tttitle: "Vertriebs-und Marketingmanager",
+                dddescription: "AL KHUMASYAH TURNING & WELDING, sharjah",
+                ddddd: "08. April 2008 – 06. Juli 2008",
+                jjjd: "Verwalten und führen alle Vertriebs- und Marketingaktivitäten von A bis Z im Startup-Unternehmen.",
+                box: "Irland",
+                boxx: "Deutschland",
+                boxxx: "VAE",
+                home: "Startseite",
+                ireland: "Irland",
+                germany: "Deutschland",
+                uae: "VAE",
+                reco: "Empfehlungen",
+                lang: "Sprachen",
+                cv: "LL herunterladen",
+                contact: "Kontakt"
+            },
+            spanish: {
+                title: "ANALISTA FINANCIERO",
+                description: 'johnson controles, Dubái',
+                ddd: "14 marzo 2011 – 13 mayo 2014",
+                jd: "Preparar informes financieros mensuales y análisis de brechas, Estudiar y analizar las transacciones comerciales y de mercado, Lanzar SMIS (Sistema de información de ventas y marketing), Implementar y realizar campañas de capacitación SMIS en la región ME, Diseñar, emitir y editar quincenalmente un libro interactivo, automatizado e inédito de finanzas, operaciones e inteligencia de negocios, El libro consta de 300 páginas y paneles de datos animados para la toma directa de decisiones a nivel regional.",
+                ttitle: "Contador",
+                ddescription: 'MGCC, sharjah',
+                dddd: "8 octubre 2008 – 12 marzo 2011",
+                jjd: "Responsable del departamento de cobranzas y pagos, Responsable de transacciones de prepago y lubricantes, Preparar todo tipo de comprobantes de diario, Preparar conciliaciones bancarias y de proveedores, Preparar todo tipo de caja chica para los proyectos, Preparar y conciliar informes de adquisiciones e informes de análisis de proveedores, Controlador de Facturas de Asfalto (Internas y Externas), proceso de acuerdo a los procedimientos contables correspondientes.",
+                tttitle: "gerente de ventas y marketing",
+                dddescription: "AL KHUMASYAH TURNING & WELDING, sharjah",
+                ddddd: "08 abril 2008 – 06 julio 2008",
+                jjjd: "Administre y ejecute todas las actividades de ventas y marketing de la A a la Z en la nueva empresa.",
+                box: "Irlanda",
+                boxx: "Alemania",
+                boxxx: "UÁE",
+                home: "Página principal",
+                ireland: "Irlanda",
+                germany: "Alemania",
+                uae: "UÁE",
+                reco: "Recomendaciones",
+                lang: "Idiomas",
+                cv: "Descargar CV",
+                contact: "Contacto"
+            },
+            korean: {
+                title: "재무 분석가",
+                description: 'johnson controles, 두바이',
+                ddd: "2011년 3월 14일 – 2014년 5월 13일",
+                jd: "월별 재무 보고서 및 격차 분석을 준비합니다, 판매 및 시장 거래를 연구하고 분석합니다, SMIS(영업 및 마케팅 정보 시스템)를 시작합니다, ME 지역에서 SMIS 교육 캠페인을 구현 및 실시합니다, 격주로 자동화되고 전례 없는 대화형 재무, 운영 및 비즈니스 인텔리전스 책을 디자인, 발행 및 편집합니다, 이 책은 지역별로 직접적인 의사 결정을 내릴 수 있도록 300페이지 분량의 애니메이션 데이터 대시보드로 구성되어 있습니다.",
+                ttitle: "회계사",
+                ddescription: 'MGCC, 샤르자',
+                dddd: "2008년 10월 8일 – 2011년 3월 12일",
+                jjd: "지불 및 수신 부서를 담당합니다, 선불 및 윤활유 거래를 담당합니다, 모든 종류의 저널 바우처를 준비하십시오, 은행과 공급업체 조정을 준비합니다, 프로젝트를 위해 모든 유형의 소액 현금을 준비하십시오, 조달 보고서 및 공급업체 분석 보고서를 준비하고 조정합니다, 아스팔트 송장(내부 및 외부)의 컨트롤러는 적절한 회계 절차에 따라 처리합니다.",
+                tttitle: "영업 및 마케팅 관리자",
+                dddescription: "AL KHUMASYAH TURNING & WELDING, 샤르자",
+                ddddd: "2008년 4월 8일 – 2008년 7월 06일",
+                jjjd: "스타트업 회사의 모든 영업 및 마케팅 활동을 A부터 Z까지 관리하고 운영합니다.",
+                box: "아일랜드",
+                boxx: "독일",
+                boxxx: "아랍 에미리트",
+                home: "홈페이지",
+                ireland: "아일랜드",
+                germany: "독일",
+                uae: "홈페이지",
+                reco: "추천",
+                lang: "언어",
+                cv: "이력서 다운로드",
+                contact: "연락하다"
+            }
+        }
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
