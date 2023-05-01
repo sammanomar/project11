@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Samman for data analytics and coding, KPI">
+    <meta name="keywords" content="Omar Samman, data analytics, KPI, coding">
+    <title>Omar Samman</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>  
+        <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
+        <div class="langs">
+        <a href="#" language="english" class="active">EN</a>
+        <a href="#" language="german">DE</a>
+        <a href="#" language="arabic">AR</a>
+        <a href="#" language="spanish">ES</a>
+        <a href="#" language="korean">KO</a>  
+        </div>
+        <div class="toggle"></div>
+        </header>
+        <video src="assets/videos/contact.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+        <h2 class="title">Contact</h2> 
+        <h3 class="description">PHONE : +49 170 2671177</h3>
+        <p class="ddd">E-MAIL : sammanomar@hotmail.com</p>
+        <p class="subj">Availability : 24 Hours</p>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82766.5813061477!2d10.914444104360587!3d49.58915601962625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f8c7d57c34a1%3A0x41eda32beb5c7d0!2sErlangen!5e0!3m2!1sen!2sde!4v1678625730658!5m2!1sen!2sde">
+        </iframe><br>
+        <p class="subjj"><em>Location</em> : Erlangen, Germany</p>
+        <a class="box" href="ireland.html">ireland</a>
+        <a class="boxx" href="germany.html">germany</a>
+        <a class="boxxx" href="uae.html">UAE</a>
+        
+        </div>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/omar-samman-3a65b2267" target="_blank" rel="noopener"
+                        aria-label="Visit my linkedin page (opens in a new tab)"><img src="assets/images/l.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li><a class="ireland" href="ireland.html">Ireland</a></li>
+        <li><a class="germany" href="germany.html">Germany</a></li>
+        <li><a class="uae" href="uae.html">UAE</a></li>
+        <li><a class= "reco" href="recommendations.html">Recommendations</a></li>
+        <li><a class= "lang" href="language.html">Languages</a></li>
+        <li><a class= "cv" href="assets/images/utd.pdf" target="_blank">Download CV</a></li>
+        <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </div>    
+
+    <script>
+        let langs = document.querySelector(".langs"),
+            link = document.querySelectorAll("a"),
+            title = document.querySelector(".title"),
+            descr = document.querySelector(".description"),
+            dat = document.querySelector(".ddd"),
+            jobdescr = document.querySelector(".subj"),
+            availability = document.querySelector(".subjj"),
+            box = document.querySelector(".box"),
+            boxx = document.querySelector(".boxx"),
+            boxxx = document.querySelector(".boxxx"),
+            home = document.querySelector(".home"),
+            ireland = document.querySelector(".ireland"),
+            germany = document.querySelector(".germany"),
+            uae = document.querySelector(".uae"),
+            reco = document.querySelector(".reco"),
+            lang = document.querySelector(".lang"),
+            cv = document.querySelector(".cv"),
+            contact = document.querySelector(".contact");
+
+        link.forEach(el=>{
+            el.addEventListener("click", ()=>{
+                langs.querySelector(".active").classList.remove("active");
+                el.classList.add("active");
+
+                let attr = el.getAttribute("language")
+
+                title.textContent = data[attr].title
+                descr.textContent = data[attr].description
+                dat.textContent = data[attr].ddd
+                jobdescr.textContent = data[attr].subj
+                availability.textContent = data[attr].subjj
+                box.textContent = data[attr].box
+                boxx.textContent = data[attr].boxx
+                boxxx.textContent = data[attr].boxxx
+                home.textContent = data[attr].home
+                ireland.textContent = data[attr].ireland
+                germany.textContent = data[attr].germany
+                uae.textContent = data[attr].uae
+                lang.textContent = data[attr].lang
+                reco.textContent = data[attr].reco
+                cv.textContent = data[attr].cv
+                contact.textContent = data[attr].contact
+            })
+        })
+
+        let data = {
+            arabic: {
+                title: "التواصل",
+                description: "هاتف : ٢٦٧١١٧٧ ١٧٠ ٠٠٤٩",
+                ddd: "sammanomar@hotmail.com : البريد الالكتروني",
+                subj: "التواجد : ٢٤ ساعة",
+                subjj: "الموقع : إرلانجن ، ألمانيا",
+                box: "إيرلندا",
+                boxx: "ألمانيا",
+                boxxx: "الإمارات",
+                home: "الصفحة الرئيسية",
+                ireland: "إيرلندا",
+                germany: "ألمانيا",
+                uae: "الإمارات",
+                reco: "التوصيات",
+                lang: "اللغات",
+                cv: "تنزيل السيرة الذاتية",
+                contact: "التواصل"
+            },
+            english: {
+                title: "Contact",
+                description: "PHONE : +49 170 2671177",
+                ddd: "E-MAIL : sammanomar@hotmail.com",
+                subj: "Availability : 24 Hours",
+                subjj: "Location : Erlangen, Germany",
+                box: "Ireland",
+                boxx: "Germany",
+                boxxx: "UAE",
+                home: "Home",
+                ireland: "Ireland",
+                germany: "Germany",
+                uae: "UAE",
+                reco: "Recommendations",
+                lang: "Languages",
+                cv: "Download CV",
+                contact: "Contact"
+            },
+            german: {
+                title: "Kontakt",
+                description: 'TELEFON : +49 170 2671177',
+                ddd: "E-MAIL : sammanomar@hotmail.com",
+                subj: "Verfügbarkeit : 24 Stunden",
+                subjj: "Ort: Erlangen, Deutschland",
+                box: "Irland",
+                boxx: "Deutschland",
+                boxxx: "VAE",
+                home: "Startseite",
+                ireland: "Irland",
+                germany: "Deutschland",
+                uae: "VAE",
+                reco: "Empfehlungen",
+                lang: "Sprachen",
+                cv: "LL herunterladen",
+                contact: "Kontakt"
+            },
+            spanish: {
+                title: "Contacto",
+                description: 'TELÉFONO : +49 170 2671177',
+                ddd: "CORREO ELECTRÓNICO : sammanomar@hotmail.com",
+                subj: "Disponibilidad : 24 Horas",
+                subjj: "Ubicación: Erlangen, Alemania",
+                box: "Irlanda",
+                boxx: "Alemania",
+                boxxx: "UÁE",
+                home: "Página principal",
+                ireland: "Irlanda",
+                germany: "Alemania",
+                uae: "UÁE",
+                reco: "Recomendaciones",
+                lang: "Idiomas",
+                cv: "Descargar CV",
+                contact: "Contacto"
+            },
+            korean: {
+                title: "연락하다",
+                description: '전화 : +49 170 2671177',
+                ddd: "이메일 : sammanomar@hotmail.com",
+                subj: "가용성 : 24시간",
+                subjj: "위치 : 독일 에를랑겐",
+                box: "아일랜드",
+                boxx: "독일",
+                boxxx: "아랍 에미리트",
+                home: "홈페이지",
+                ireland: "아일랜드",
+                germany: "독일",
+                uae: "홈페이지",
+                reco: "추천",
+                lang: "언어",
+                cv: "이력서 다운로드",
+                contact: "연락하다"
+            }
+        }
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
