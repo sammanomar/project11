@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Samman for data analytics and coding, KPI">
+    <meta name="keywords" content="Omar Samman, data analytics, KPI, coding">
+    <title>Omar Samman</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>   
+        <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
+        <div class="langs">
+        <a href="#" language="english" class="active">EN</a>
+        <a href="#" language="german">DE</a>
+        <a href="#" language="arabic">AR</a>
+        <a href="#" language="spanish">ES</a>
+        <a href="#" language="korean">KO</a> 
+        </div>
+        <div class="toggle"></div>
+        </header>
+        <video src="assets/videos/germany.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+        <h2 class="title">NIGHT MANAGER</h2>
+        <h3 class="description">NOVUM HOTELS SUED GMBH, HAMBURG</h3>
+        <p class="ddd">July, 1 2022 - December, 15 2022</p>
+        <p class="jd">
+            Manage and run the whole hotel activities independently at night, 
+            Manage front desk activity and handle guests’ check-ins and check-outs, 
+            Process the daily payments and prepare the daily closure reports and forecasts, 
+            Ensure that all end-of-day activities have been successfully executed by employees, 
+            Balance the cash drawer and log receipts, Process and prepare registration forms and reservations for the next day.
+        </p>
+        <h2 class="ttitle">NIGHT AUDITOR</h2>
+        <h3 class="ddescription">WILKON E.K., NUREMBERG</h3>
+        <p class="dddd">September, 1 2019 - June, 30 2022</p>
+        <p class="jjd">
+            Manage and run the whole hotel activities independently at night, 
+            Manage front desk activity and handle guests’ check-ins and check-outs, 
+            Process the daily payments and prepare the daily closure reports and forecasts, 
+            Ensure that all end-of-day activities have been successfully executed by employees, 
+            Balance the cash drawer and log receipts, Process and prepare registration forms and reservations for the next day.
+        </p>
+        <h2 class="tttitle">Freelancer</h2>
+        <h3 class="dddescription">Omar Samman, Regional</h3>
+        <p class="ddddd">2015 - UTD</p>
+        <p class="jjjd">
+            Role Player and Terp with NATO and the American military (The Big Word TBW),
+            Sales Executive (BAGBNB).
+        </p>
+        <a class="box" href="ireland.html">ireland</a>
+        <a class="boxx" href="germany.html">germany</a>
+        <a class="boxxx" href="uae.html">UAE</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/omar-samman-3a65b2267" target="_blank" rel="noopener"
+                        aria-label="Visit my linkedin page (opens in a new tab)"><img src="assets/images/l.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li><a class="ireland" href="ireland.html">Ireland</a></li>
+        <li><a class="germany" href="germany.html">Germany</a></li>
+        <li><a class="uae" href="uae.html">UAE</a></li>
+        <li><a class= "reco" href="recommendations.html">Recommendations</a></li>
+        <li><a class= "lang" href="language.html">Languages</a></li>
+        <li><a class= "cv" href="assets/images/utd.pdf" target="_blank">Download CV</a></li>
+        <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </div>    
+
+    <script>
+        let langs = document.querySelector(".langs"),
+            link = document.querySelectorAll("a"),
+            title = document.querySelector(".title"),
+            descr = document.querySelector(".description"),
+            dat = document.querySelector(".ddd"),
+            jobdescr = document.querySelector(".jd"),
+            ttitle = document.querySelector(".ttitle"),
+            ddescr = document.querySelector(".ddescription"),
+            ddat = document.querySelector(".dddd"),
+            jjobdescr = document.querySelector(".jjd"),
+            tttitle = document.querySelector(".tttitle"),
+            dddescr = document.querySelector(".dddescription"),
+            dddat = document.querySelector(".ddddd"),
+            jjjobdescr = document.querySelector(".jjjd"),
+            box = document.querySelector(".box"),
+            boxx = document.querySelector(".boxx"),
+            boxxx = document.querySelector(".boxxx"),
+            home = document.querySelector(".home"),
+            ireland = document.querySelector(".ireland"),
+            germany = document.querySelector(".germany"),
+            uae = document.querySelector(".uae"),
+            reco = document.querySelector(".reco"),
+            lang = document.querySelector(".lang"),
+            cv = document.querySelector(".cv"),
+            contact = document.querySelector(".contact");
+
+        link.forEach(el=>{
+            el.addEventListener("click", ()=>{
+                langs.querySelector(".active").classList.remove("active");
+                el.classList.add("active");
+
+                let attr = el.getAttribute("language")
+
+                title.textContent = data[attr].title
+                descr.textContent = data[attr].description
+                dat.textContent = data[attr].ddd
+                jobdescr.textContent = data[attr].jd
+                ttitle.textContent = data[attr].ttitle
+                ddescr.textContent = data[attr].ddescription
+                ddat.textContent = data[attr].dddd
+                jjobdescr.textContent = data[attr].jjd
+                tttitle.textContent = data[attr].tttitle
+                dddescr.textContent = data[attr].dddescription
+                dddat.textContent = data[attr].ddddd
+                jjjobdescr.textContent = data[attr].jjjd
+                box.textContent = data[attr].box
+                boxx.textContent = data[attr].boxx
+                boxxx.textContent = data[attr].boxxx
+                home.textContent = data[attr].home
+                ireland.textContent = data[attr].ireland
+                germany.textContent = data[attr].germany
+                uae.textContent = data[attr].uae
+                lang.textContent = data[attr].lang
+                reco.textContent = data[attr].reco
+                cv.textContent = data[attr].cv
+                contact.textContent = data[attr].contact
+            })
+        })
+
+        let data = {
+            arabic: {
+                title: "مدير ليلي",
+                description: "NOVUM HOTELS SUED GMBH، هامبورج",
+                ddd: "١ يوليو ٢٠٢٢ - ١٥ ديسمبر ٢٠٢٢",
+                jd: ".إدارة وتشغيل أنشطة الفندق بأكملها بشكل مستقل ،إدارة نشاط مكتب الاستقبال والتعامل مع عمليات تسجيل وصول الضيوف ومغادرتهم ،معالجة المدفوعات اليومية وإعداد تقارير الإغلاق اليومية والتنبؤات ،التأكد من أن جميع أنشطة نهاية اليوم قد تم تنفيذها بنجاح من قبل الموظفين ،موازنة صندوق النقود وتسجيل الإيصالات، معالجة وإعداد استمارات التسجيل والحجوزات لليوم التالي",
+                ttitle: "مدقق ليلي",
+                ddescription: "WILKON E.K.، نورنبيرج",
+                dddd: "١ سبتمبر ٢٠١٩ - ٣٠ يونيو ٢٠٢٢",
+                jjd: ".إدارة وتشغيل أنشطة الفندق بأكملها بشكل مستقل ،إدارة نشاط مكتب الاستقبال والتعامل مع عمليات تسجيل وصول الضيوف ومغادرتهم ،معالجة المدفوعات اليومية وإعداد تقارير الإغلاق اليومية والتنبؤات ،التأكد من أن جميع أنشطة نهاية اليوم قد تم تنفيذها بنجاح من قبل الموظفين ،موازنة صندوق النقود وتسجيل الإيصالات، معالجة وإعداد استمارات التسجيل والحجوزات لليوم التالي",
+                tttitle: "مستقل",
+                dddescription: "Omar Samman، إقليمي",
+                ddddd: "٢٠١٥ - حتى الآن",
+                jjjd: ".لاعب أدوار و مترجم مع حلف شمال الآطلسي والجيش الأمريكي (The Big Word TBW)، تنفيذي مبيعات (BAGBNB)",
+                box: "إيرلندا",
+                boxx: "ألمانيا",
+                boxxx: "الإمارات",
+                home: "الصفحة الرئيسية",
+                ireland: "إيرلندا",
+                germany: "ألمانيا",
+                uae: "الإمارات",
+                reco: "التوصيات",
+                lang: "اللغات",
+                cv: "تنزيل السيرة الذاتية",
+                contact: "التواصل"
+            },
+            english: {
+                title: "NIGHT MANAGER",
+                description: "NOVUM HOTELS SUED GMBH, HAMBURG",
+                ddd: "July, 1 2022 - December, 15 2022",
+                jd: "Manage and run the whole hotel activities independently at night, Manage front desk activity and handle guests’ check-ins and check-outs, Process the daily payments and prepare the daily closure reports and forecasts, Ensure that all end-of-day activities have been successfully executed by employees, Balance the cash drawer and log receipts, process and prepare registration forms and reservations for the next day.",
+                ttitle: "NIGHT AUDITOR",
+                ddescription: "WILKON E.K., NUREMBERG",
+                dddd: "September, 1 2019 - June, 30 2022",
+                jjd: "Manage and run the whole hotel activities independently at night, Manage front desk activity and handle guests’ check-ins and check-outs, Process the daily payments and prepare the daily closure reports and forecasts, Ensure that all end-of-day activities have been successfully executed by employees, Balance the cash drawer and log receipts, process and prepare registration forms and reservations for the next day.",
+                tttitle: "Freelancer",
+                dddescription: "Omar Samman, Regional",
+                ddddd: "2015 - UTD",
+                jjjd: "Role Player and Terp with NATO and the American military (The Big Word TBW), Sales Executive (BAGBNB).",
+                box: "Ireland",
+                boxx: "Germany",
+                boxxx: "UAE",
+                home: "Home",
+                ireland: "Ireland",
+                germany: "Germany",
+                uae: "UAE",
+                reco: "Recommendations",
+                lang: "Languages",
+                cv: "Download CV",
+                contact: "Contact"
+            },
+            german: {
+                title: "NACHT-MANAGER",
+                description: 'NOVUM HOTELS SUED GMBH, HAMBURG',
+                ddd: "1. Juli 2022 - 15. Dezember 2022",
+                jd: "Verwalten und führen die gesamten Hotelaktivitäten nachts selbstständig, Betreuung der Gäste, Check-in / Check-out Rechnungs vorbereitung für abreisende Gäste, Administrative Tätigkeiten; Eingabe von Meldescheinen, Kassenabrechnungen, Tagesabschlüsse, Ausdruck von Listen für Frühdienst, Housekeeping und Direktion, Ggf. Bardienste und Frühstücksaufbau.",
+                ttitle: "NACHTPORTIER",
+                ddescription: 'WILKON E.K., NÜRNBERG',
+                dddd: "1. September 2019 - 30. Juni 2022",
+                jjd: "Verwalten und führen die gesamten Hotelaktivitäten nachts selbstständig, Betreuung der Gäste, Check-in / Check-out Rechnungs vorbereitung für abreisende Gäste, Administrative Tätigkeiten; Eingabe von Meldescheinen, Kassenabrechnungen, Tagesabschlüsse, Ausdruck von Listen für Frühdienst, Housekeeping und Direktion, Ggf. Bardienste und Frühstücksaufbau.",
+                tttitle: "Freiberufler",
+                dddescription: "Omar Samman، Regional",
+                ddddd: "2015 - dato",
+                jjjd: "Role Player und Terp bei der NATO und dem amerikanischen Militär (The Big Word TBW), Sales Executive (BAGBNB).",
+                box: "Irland",
+                boxx: "Deutschland",
+                boxxx: "VAE",
+                home: "Startseite",
+                ireland: "Irland",
+                germany: "Deutschland",
+                uae: "VAE",
+                reco: "Empfehlungen",
+                lang: "Sprachen",
+                cv: "LL herunterladen",
+                contact: "Kontakt"
+            },
+            spanish: {
+                title: "Desarrollador de pila completa",
+                description: 'NOVUM HOTELS SUED GMBH, HAMBURGO',
+                ddd: "1 julio 2022 - 15 diciembre 2022",
+                jd: "Administre y ejecute todas las actividades del hotel de forma independiente durante la noche, Administre la actividad de la recepción y maneje los registros de entrada y salida de los huéspedes, Procesar los pagos diarios y preparar los informes y previsiones de cierre diario, Asegúrese de que los empleados hayan ejecutado con éxito todas las actividades del final del día, Equilibre la caja registradora y registre los recibos. procesar y preparar formularios de registro y reservas para el día siguiente.",
+                ttitle: "AUDITOR NOCTURNO",
+                ddescription: 'WILKON E.K., Núremberg',
+                dddd: "1 septiembre 2019 - 30 junio 2022",
+                jjd: "Administre y ejecute todas las actividades del hotel de forma independiente durante la noche, Administre la actividad de la recepción y maneje los registros de entrada y salida de los huéspedes, Procesar los pagos diarios y preparar los informes y previsiones de cierre diario, Asegúrese de que los empleados hayan ejecutado con éxito todas las actividades del final del día, Equilibre la caja registradora y registre los recibos. procesar y preparar formularios de registro y reservas para el día siguiente.",
+                tttitle: "Persona de libre dedicación",
+                dddescription: "Omar Samman، Regional",
+                ddddd: "2015 - A hoy",
+                jjjd: "Jugador de rol y Terp con la NATO y el ejército estadounidense (The Big Word TBW), Ejecutivo de ventas (BAGBNB).",
+                box: "Irlanda",
+                boxx: "Alemania",
+                boxxx: "UÁE",
+                home: "Página principal",
+                ireland: "Irlanda",
+                germany: "Alemania",
+                uae: "UÁE",
+                reco: "Recomendaciones",
+                lang: "Idiomas",
+                cv: "Descargar CV",
+                contact: "Contacto"
+            },
+            korean: {
+                title: "나이트 매니저",
+                description: 'NOVUM HOTELS SUED GMBH, 함부르크',
+                ddd: "2022년 7월 1일 - 2022년 12월 15일",
+                jd: "밤에는 전체 호텔 활동을 독립적으로 관리하고 운영합니다, 프런트 데스크 활동을 관리하고 투숙객의 체크인 및 체크아웃을 처리합니다, 일일 지불을 처리하고 일일 마감 보고서 및 예측을 준비합니다, 모든 일과 종료 활동이 직원에 의해 성공적으로 실행되었는지 확인합니다, 금전함의 균형을 맞추고 영수증을 기록합니다, 다음날 등록 양식 및 예약을 처리하고 준비합니다.",
+                ttitle: "야간 감사",
+                ddescription: 'WILKON E.K., 뉘른베르크',
+                dddd: "2019년 9월 1일 - 2022년 6월 30일",
+                jjd: "밤에는 전체 호텔 활동을 독립적으로 관리하고 운영합니다, 프런트 데스크 활동을 관리하고 투숙객의 체크인 및 체크아웃을 처리합니다, 일일 지불을 처리하고 일일 마감 보고서 및 예측을 준비합니다, 모든 일과 종료 활동이 직원에 의해 성공적으로 실행되었는지 확인합니다, 금전함의 균형을 맞추고 영수증을 기록합니다, 다음날 등록 양식 및 예약을 처리하고 준비합니다.",
+                tttitle: "프리랜서",
+                dddescription: "Omar Samman، 지역",
+                ddddd: "2015 - 최신 정보",
+                jjjd: "NATO 및 미군(The Big Word TBW)의 역할 플레이어 및 Terp, 영업 임원(BAGBNB).",
+                box: "아일랜드",
+                boxx: "독일",
+                boxxx: "아랍 에미리트",
+                home: "홈페이지",
+                ireland: "아일랜드",
+                germany: "독일",
+                uae: "홈페이지",
+                reco: "추천",
+                lang: "언어",
+                cv: "이력서 다운로드",
+                contact: "연락하다"
+            }
+        }
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
