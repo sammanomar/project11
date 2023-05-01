@@ -1,3 +1,4 @@
+/* google font */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
 {
@@ -29,6 +30,7 @@ header ul
 {
     list-style-type: none;
 }
+/* slide menu closed */
 .toggle
 {
   position: relative;
@@ -40,6 +42,7 @@ header ul
   background-position: center;
   cursor: pointer;
 }
+/* slide menu open */
 .toggle.active
 {
   background: url(https://i.ibb.co/rt3HybH/close.png);

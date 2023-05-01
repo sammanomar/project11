@@ -1,108 +1,245 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Omar Samman Portfolio/Website
 
-Welcome USER_NAME,
+## The Purpose of This Project
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This multi-languages and dynamic website was made as a portfolio for the purpose of jobs hunting.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This website is meant for:
 
-## Gitpod Reminders
+- Employers who are looking for my skill-set
+- Customers who need my services
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![](assets/screenshots/.png)
 
-`python3 -m http.server`
+The site contains seven different pages in 5 different languages and one additional link to download CV:
 
-A blue button should appear to click: _Make Public_,
+1. Home page summary
+2. Ireland page
+3. Germany page
+4. UAE page
+5. Recommendations page
+6. Languages page
+7. Contact page
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Table of Content
+- The Targeted Audience 
+- Existing Parties
+- New Users
+- User Goals
+- Requirements
+- Design
+- Colors
+- Typography
+- Images and Videos
+- Features
+- Existing Features
+- Technologies used
+- Testing
+- Validator Testing
+- Unfixed Bugs
+- Development and Deployment
+- Content
+- Media
+- Credits
+- UX
 
-A blue button should appear to click: _Make Public_,
+## The Targeted Audience 
 
-Another blue button should appear to click: _Open Browser_.
+Employers and customers world-wide.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+This website is the first of five projects that needs to be completed in order to receive a diploma in Software Development from The Code Institute.
 
-To log into the Heroku toolbelt CLI:
+Requirements for the project is that the website has to be static and responsive using HTML5 and CSS3. I have also used JavaScript which I learned through my completed JS course.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+A live version of the project can be found here -  https://sammanomar.github.io/project11/
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Existing parties
 
-------
+- As an employer: I want to be able to see the creative portfolio of Omar.
+- As an employee: I want to get in touch with employers.
+- As a Customer: I want to be able to contact Omar for enquiries.
 
-## Release History
+## New Users
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- As a new User: I want to know more about Omar skill-set and capabilities.
+- As a new User: I want to contact Omar for a possible job contracts.
+- As a new User: I want to contact Omar for enqueries.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## User Goals
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Impress employers to find a job or win freelance contracts
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Requirements
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+A static responsive website that incorporates the technologies I have learned so far that contains some advanced functionality. The development process needs to be well documented through a version controls system such as GitHub.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Required technologies: HTML, CSS
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Design
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+As this is my first project the design has been influenced by the ”Love Running” & "Coffeeshop in Dublin" - projects. I gathered many ideas from various websites and compiled them interactively in this website
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+My aim has been to create a clean looking website where there is a balance between colors, images and functionality.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Omar Samman website is a 7 pages website with one additional link to download CV. I have video backgrounds. I used JavaScript to add switching between languages functionality and add a menu slider feature in order to ensure easy navigation between the pages.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Colors
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The font color white #fff was used for all pages with black font color for the slide menu and two different degrees of orange color background with shadow effect used for switching between languages in compatible with the colors of videos backgrounds.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Typography
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Poppins was chosen as the body and heading font with a fallback of Sans-Serif.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# 11. Images and Videos
 
-------
+I have not used much images at the website but videos. videos have been chosen in accordance to the color and the content. The purpose of the website is to give a friendly look and express quality. Videos have been sized in order to match design. I have used the two links below to give me the toggled slide menu:
 
-## FAQ about the uptime script
+https://i.ibb.co/HrfVRcx/menu.png
+https://i.ibb.co/rt3HybH/close.png
 
-**Why have you added this script?**
+All my videos were downloaded from the below website:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+https://pexels.com
 
-**How will this affect me?**
+## Features
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Omar Samman website is a 7 pages website. Each page consists of:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Main section
+- Header logo and languages
+- Looped different video in each page
+- H2, H3 and paragraphs as the content of the page
+- 3 fixed navigation country boxes and 1 link to linkedin at the bottom of the page
+- Slide menu with an option to download my CV
+- Script for switching between languagees
+- Script for the toggled slide menu
+- Footer 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Existing Features
 
-**So….?**
+- Creative different video backgrounds that are compatible with the content
+- JavaScript Function for switching between languages
+- JavaScript Function for toggling and sliding the menu
+- animated linkedin and country boxes
+- Google map box was placed at contact page
+- My logo name is fixed on the top in order to make it easy for the user to get back to the home page smoothly
+- Download CV link was put into the menu bar.
+ 
+# 18. Technologies used
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+HTML
+CSS
+JS
+Testing
 
-**Can I opt out?**
+# 19. Testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Test of functionality and appearance of the website has have been dealt with thru out all stages of the development phase.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Test has been conducted using Google Chrome and Safari. Testing different devices and screen resolutions has been conducted using Google DevTools.
 
-**Anything more?**
+## Lists of main issues discovered.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- Unclosed div and p element were discovered
+Solution: closed
 
----
+- Download CV links didn't work correctly because of some spaces
+Solution: spaces were removed and it function correctly
 
-Happy coding!
+- Unnecessary sections wrapped ids were added wrongly
+Solution: sections removed and the commands were wrapped with divs instead
+
+- Duplicated ids were added wrong
+Solution: classes were added to override the duplicated ids error
+
+- Top menu disappears even though its fixed.
+Solution: Had to use z-index to keep the menu on top of all sections and elements, value set to 20
+
+- Apart from these issues there have been several minor issues. The majority of these has been due to miss spelled tags, attributes and other mistakes.
+Solution: The errors were easily corrected.
+
+# 20. Validator Testing
+
+- HTML
+No errors were returned when passing through the official W3C Validator
+W3C HTML Validator.
+![](/assets/screenshots/home.png)
+![](/assets/screenshots/career.png)
+![](/assets/screenshots/contact.png.
+
+- CSS
+No errors were returned when passing through the official (Jigsaw validator)
+Jigsaw validator
+![](/assets/screenshots/csstest.png)
+
+Lighthouse testing
+Lighthouse testing score
+![](/assets/screenshots/lighthouse.png)
+
+# 21. Unfixed Bugs
+
+All known bugs in this section has been moved to the section Testing with solution when they have been solved. Last known bug solved on 2022-03-16. No more testing will be conducted now and the project will be submitted.
+
+Back to top
+
+# 22. Development and Deployment
+
+The development environment used for this project was GitPod. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod environment was created using a template provided by Code Institute.
+
+The live version of the project is deployed at GitHub pages.
+
+The procedure for deployment followed the "Creating your site" steps provided in GitHub Docs.
+
+Log into GitHub.
+Locate the GitHub Repository that shall be deployed live.
+At the top of the repository, select Settings from the menu items.
+Scroll down the Settings page to the ”GitHub Pages" section and click on the ”Check it out here!”
+At the ”Source” section choose ”main” as Branch and root as folder and click ”Save”
+The website will deploy and the pages refreshes to provide the live link to the project.
+The live link can be found here - https://sammanomar.github.io/project11/
+
+# 23. Content
+
+All text content on this site has been produced by the author of the project and is not fictional. It represents my real life career history and up to date portfolio.
+The design of the project is inspired by Code Institutes ”Love Running” and coffeeshop in Dublin projects. Code has been borrowed from the two projects.
+
+# 24. Media
+
+All videos are licensed under a broad commercial license that allows them to be used in this project (Named ”P1”). The license allows usage for public purposes.
+
+Link to license agreement
+https://pexels.com
+
+
+# 25. Credits
+
+For code inspiration, design inputs, help and advice. Many thanks to:
+
+My great mentor at Code Institute. She gave me many recommendations and notes.
+Lauren-Nicole
+
+Junior Web Developer - SWGFL | Hackteam: Thank you for the help with git pull problem
+Kera Cudmore
+
+Sites that has provided me with knowledge and information that has been vital to this project:
+
+https://www.w3schools.com/ https://stackoverflow.com https://www.diffchecker.com https://www.quora.com
+https://glyphs.co
+
+And all the content in HTML-Essentials, CSS-Essentials and the Walkthrough project ”Love Running” that has provided inspiration and knowledge.
+
+## 5 additional screenshots
+
+![](/assets/screenshots/footeri.png)
+![](/assets/screenshots/headerii.png)
+![](/assets/screenshots/footerii.png)
+![](/assets/screenshots/headeriii.png)
+![](/assets/screenshots/footeriii.png)
+
+
+
+Best regards
+
+Back to top

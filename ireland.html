@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- logo and languages -->
     <section class="showcase">
         <header>   
         <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
@@ -42,6 +43,7 @@
                         aria-label="Visit my linkedin page (opens in a new tab)"><img src="assets/images/l.png"></a></li>
         </ul>
     </section>
+    <!-- slide menu -->
     <div class="menu">
         <ul>
         <li><a class="home" href="index.html">Home</a></li>
@@ -54,7 +56,7 @@
         <li><a class="contact" href="contact.html">Contact</a></li>
         </ul>
     </div>    
-
+    <!-- switching between languages script -->
     <script>
         let langs = document.querySelector(".langs"),
             link = document.querySelectorAll("a"),
@@ -187,7 +189,7 @@
             }
         }
     </script>
-
+    <!-- slide menu script -->
     <script>
         const menuToggle = document.querySelector('.toggle');
         const showcase = document.querySelector('.showcase');
@@ -197,5 +199,7 @@
         showcase.classList.toggle('active');
         })
     </script>
+    <footer>
+    </footer>
 </body>
 </html>
