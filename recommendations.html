@@ -17,11 +17,11 @@
         <header>   
         <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
         <div class="langs">
-        <a href="#" language="english" class="active">EN</a>
-        <a href="#" language="german">DE</a>
-        <a href="#" language="arabic">AR</a>
-        <a href="#" language="spanish">ES</a>
-        <a href="#" language="korean">KO</a> 
+        <a href="#" id="english" class="active">EN</a>
+        <a href="#" id="german">DE</a>
+        <a href="#" id="arabic">AR</a>
+        <a href="#" id="spanish">ES</a>
+        <a href="#" id="korean">KO</a> 
         </div>
         <div class="toggle"></div>
         </header>
@@ -39,7 +39,7 @@
         <h2 class="ttitle">Regional Sales and Marketing Manager</h2>
         <h3 class="ddescription">JOHNSON CONTROLS, DUBAI</h3>
         <p class="dddd">January, 28 2013</p>
-        <p class="jjd"><i>
+        <p class="jjd">
             “Omar is a very dedicated individual who consistently seeks out solutions to challenges within
             his department. He creates phenomenal reports via excel and very interactive excel tools that
             help managers deal with a great amount of information. He is very hard working and
@@ -47,7 +47,7 @@
             others to assist in accomplishing his goals. He forms coalitions. He is very passionate about 
             meeting his objectives and being successful in his role. Omar is a talented member to have on
             your team.”
-        </p></i>
+        </p>
         <a class="box" href="ireland.html">ireland</a>
         <a class="boxx" href="germany.html">germany</a>
         <a class="boxxx" href="uae.html">UAE</a>
@@ -99,7 +99,7 @@
                 langs.querySelector(".active").classList.remove("active");
                 el.classList.add("active");
 
-                let attr = el.getAttribute("language")
+                let attr = el.getAttribute("id")
 
                 title.textContent = data[attr].title
                 descr.textContent = data[attr].description
