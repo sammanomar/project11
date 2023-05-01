@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Samman for data analytics and coding, KPI">
+    <meta name="keywords" content="Omar Samman, data analytics, KPI, coding">
+    <title>Omar Samman</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>   
+        <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
+        <div class="langs">
+        <a href="#" language="english" class="active">EN</a>
+        <a href="#" language="german">DE</a>
+        <a href="#" language="arabic">AR</a>
+        <a href="#" language="spanish">ES</a>
+        <a href="#" language="korean">KO</a> 
+        </div>
+        <div class="toggle"></div>
+        </header>
+        <video src="assets/videos/reco.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+        <h2 class="title">REGIONAL EXECUTIVE DIRECTOR</h2>
+        <h3 class="description">JOHNSON CONTROLS, DUBAI</h3>
+        <p class="ddd">February, 03 2013</p>
+        <p class="jd"><i>
+            “I have known Omar for over two (2) years now and during that time he has shown excellent
+            analytical skills coupled with very good behaviors. He works well with the team and he is
+            always willing to go the extra mile.”</i>
+        </p>
+        <h2 class="ttitle">Regional Sales and Marketing Manager</h2>
+        <h3 class="ddescription">JOHNSON CONTROLS, DUBAI</h3>
+        <p class="dddd">January, 28 2013</p>
+        <p class="jjd"><i>
+            “Omar is a very dedicated individual who consistently seeks out solutions to challenges within
+            his department. He creates phenomenal reports via excel and very interactive excel tools that
+            help managers deal with a great amount of information. He is very hard working and
+            develops rapport with people across the business units. He gathers strong support from
+            others to assist in accomplishing his goals. He forms coalitions. He is very passionate about 
+            meeting his objectives and being successful in his role. Omar is a talented member to have on
+            your team.”
+        </p></i>
+        <a class="box" href="ireland.html">ireland</a>
+        <a class="boxx" href="germany.html">germany</a>
+        <a class="boxxx" href="uae.html">UAE</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/omar-samman-3a65b2267" target="_blank" rel="noopener"
+                        aria-label="Visit my linkedin page (opens in a new tab)"><img src="assets/images/l.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li><a class="ireland" href="ireland.html">Ireland</a></li>
+        <li><a class="germany" href="germany.html">Germany</a></li>
+        <li><a class="uae" href="uae.html">UAE</a></li>
+        <li><a class= "reco" href="recommendations.html">Recommendations</a></li>
+        <li><a class= "lang" href="language.html">Languages</a></li>
+        <li><a class= "cv" href="assets/images/utd.pdf" target="_blank">Download CV</a></li>
+        <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </div>    
+
+    <script>
+        let langs = document.querySelector(".langs"),
+            link = document.querySelectorAll("a"),
+            title = document.querySelector(".title"),
+            descr = document.querySelector(".description"),
+            dat = document.querySelector(".ddd"),
+            jobdescr = document.querySelector(".jd"),
+            ttitle = document.querySelector(".ttitle"),
+            ddescr = document.querySelector(".ddescription"),
+            ddat = document.querySelector(".dddd"),
+            jjobdescr = document.querySelector(".jjd"),
+            box = document.querySelector(".box"),
+            boxx = document.querySelector(".boxx"),
+            boxxx = document.querySelector(".boxxx"),
+            home = document.querySelector(".home"),
+            ireland = document.querySelector(".ireland"),
+            germany = document.querySelector(".germany"),
+            uae = document.querySelector(".uae"),
+            reco = document.querySelector(".reco"),
+            lang = document.querySelector(".lang"),
+            cv = document.querySelector(".cv"),
+            contact = document.querySelector(".contact");
+
+        link.forEach(el=>{
+            el.addEventListener("click", ()=>{
+                langs.querySelector(".active").classList.remove("active");
+                el.classList.add("active");
+
+                let attr = el.getAttribute("language")
+
+                title.textContent = data[attr].title
+                descr.textContent = data[attr].description
+                dat.textContent = data[attr].ddd
+                jobdescr.textContent = data[attr].jd
+                ttitle.textContent = data[attr].ttitle
+                ddescr.textContent = data[attr].ddescription
+                ddat.textContent = data[attr].dddd
+                jjobdescr.textContent = data[attr].jjd
+                box.textContent = data[attr].box
+                boxx.textContent = data[attr].boxx
+                boxxx.textContent = data[attr].boxxx
+                home.textContent = data[attr].home
+                ireland.textContent = data[attr].ireland
+                germany.textContent = data[attr].germany
+                uae.textContent = data[attr].uae
+                lang.textContent = data[attr].lang
+                reco.textContent = data[attr].reco
+                cv.textContent = data[attr].cv
+                contact.textContent = data[attr].contact
+            })
+        })
+
+        let data = {
+            arabic: {
+                title: "مدير تنفيذي إقليمي",
+                description: "جونسون كونترلوز، دبي",
+                ddd: "٣ فبراير ٢٠١٣",
+                jd: "“لقد عرفت عمر منذ أكثر من عامين (٢) حتى الآن وخلال تلك الفترة أظهر مهارات تحليلية ممتازة مقرونة بسلوكيات جيدة للغاية. إنه يعمل بشكل جيد مع الفريق وهو دائمًا على استعداد لبذل جهد إضافي”",
+                ttitle: "مديرة مبيعات و تسويق إقليمية",
+                ddescription: "جونسون كونترلوز، دبي",
+                dddd: "٢٨ يناير ٢٠١١",
+                jjd: "“عمر هو فرد متفاني للغاية يبحث باستمرار عن حلول للتحديات داخل إدارته. يقوم بإنشاء تقارير استثنائية من خلال برنامج الاكسل وأدوات اكسل إبداعية للغاية تساعد المديرين على التعامل مع كمية كبيرة من المعلومات. إنه يعمل بجد ويطور علاقة مع الأشخاص عبر وحدات الأعمال. يجمع دعمًا قويًا من الآخرين للمساعدة في تحقيق أهدافه. يشكل تحالفات. إنه متحمس للغاية لتحقيق أهدافه والنجاح في دوره. عمر عضو موهوب في فريقك”",
+                box: "إيرلندا",
+                boxx: "ألمانيا",
+                boxxx: "الإمارات",
+                home: "الصفحة الرئيسية",
+                ireland: "إيرلندا",
+                germany: "ألمانيا",
+                uae: "الإمارات",
+                reco: "التوصيات",
+                lang: "اللغات",
+                cv: "تنزيل السيرة الذاتية",
+                contact: "التواصل"
+            },
+            english: {
+                title: "REGIONAL EXECUTIVE DIRECTOR",
+                description: "johnson controls, dubai",
+                ddd: "February, 03 2013",
+                jd: "“I have known Omar for over two (2) years now and during that time he has shown excellent analytical skills coupled with very good behaviors. He works well with the team and he is always willing to go the extra mile.”",
+                ttitle: "Regional Sales and Marketing Manager",
+                ddescription: "johnson controls, dubai",
+                dddd: "January, 28 2013",
+                jjd: "“Omar is a very dedicated individual who consistently seeks out solutions to challenges within his department. He creates phenomenal reports via excel and very interactive excel tools that help managers deal with a great amount of information. He is very hard working and develops rapport with people across the business units. He gathers strong support from others to assist in accomplishing his goals. He forms coalitions. He is very passionate about meeting his objectives and being successful in his role. Omar is a talented member to have on your team.”",
+                box: "Ireland",
+                boxx: "Germany",
+                boxxx: "UAE",
+                home: "Home",
+                ireland: "Ireland",
+                germany: "Germany",
+                uae: "UAE",
+                reco: "Recommendations",
+                lang: "Languages",
+                cv: "Download CV",
+                contact: "Contact"
+            },
+            german: {
+                title: "REGIONALER GESCHÄFTSFÜHRER",
+                description: 'johnson controls, dubai',
+                ddd: "03. Februar 2013",
+                jd: "“Ich kenne Omar jetzt seit über zwei (2) Jahren und während dieser Zeit hat er ausgezeichnete analytische Fähigkeiten gepaart mit sehr gutem Verhalten gezeigt. Er arbeitet gut mit dem Team zusammen und ist immer bereit, die Extrameile zu gehen.“",
+                ttitle: "Regionaler Vertriebs- und Marketingleiter",
+                ddescription: 'johnson controls, dubai',
+                dddd: "28. Januar 2013",
+                jjd: "„Omar ist ein sehr engagierter Mensch, der konsequent nach Lösungen für Herausforderungen in seiner Abteilung sucht. Er erstellt phänomenale Berichte über Excel und sehr interaktive Excel-Tools, die Managern helfen, mit einer großen Menge an Informationen umzugehen. Er ist sehr fleißig und entwickelt eine enge Beziehung zu den Menschen in den Geschäftsbereichen. Er sammelt starke Unterstützung von anderen, um ihm beim Erreichen seiner Ziele zu helfen. Er bildet Koalitionen. Er ist sehr leidenschaftlich daran interessiert, seine Ziele zu erreichen und in seiner Rolle erfolgreich zu sein. Omar ist ein talentiertes Mitglied, das Sie in Ihrem Team haben sollten.“",
+                box: "Irland",
+                boxx: "Deutschland",
+                boxxx: "VAE",
+                home: "Startseite",
+                ireland: "Irland",
+                germany: "Deutschland",
+                uae: "VAE",
+                reco: "Empfehlungen",
+                lang: "Sprachen",
+                cv: "LL herunterladen",
+                contact: "Kontakt"
+            },
+            spanish: {
+                title: "DIRECTOR EJECUTIVO REGIONAL",
+                description: 'johnson controls, Dubái',
+                ddd: "febrero, 03 2013",
+                jd: "“Conozco a Omar desde hace más de dos (2) años y durante ese tiempo ha demostrado excelentes habilidades analíticas junto con muy buen comportamiento. Trabaja bien con el equipo y siempre está dispuesto a hacer un esfuerzo adicional.”",
+                ttitle: "Gerente Regional de Ventas y Mercadeo",
+                ddescription: 'johnson controls, Dubái',
+                dddd: "28 de enero de 2013",
+                jjd: "“Omar es una persona muy dedicada que constantemente busca soluciones a los desafíos dentro de su departamento. Él crea informes fenomenales a través de Excel y herramientas de Excel muy interactivas que ayudan a los gerentes a manejar una gran cantidad de información. Es muy trabajador y desarrolla una buena relación con las personas en todas las unidades de negocio. Reúne un fuerte apoyo de otros para ayudarlo a lograr sus objetivos. Forma coaliciones. Le apasiona alcanzar sus objetivos y tener éxito en su función. Omar es un miembro talentoso para tener en tu equipo.”",
+                box: "Irlanda",
+                boxx: "Alemania",
+                boxxx: "UÁE",
+                home: "Página principal",
+                ireland: "Irlanda",
+                germany: "Alemania",
+                uae: "UÁE",
+                reco: "Recomendaciones",
+                lang: "Idiomas",
+                cv: "Descargar CV",
+                contact: "Contacto"
+            },
+            korean: {
+                title: "지역 총괄 이사",
+                description: 'johnson controls, 두바이',
+                ddd: "2013년 2월 3일",
+                jd: "“저는 Omar를 2년 넘게 알고 지냈으며 그 동안 그는 매우 좋은 행동과 함께 뛰어난 분석 기술을 보여주었습니다. 그는 팀과 잘 어울리고 항상 더 멀리 갈 의향이 있습니다.”",
+                ttitle: "지역 영업 및 마케팅 관리자",
+                ddescription: 'johnson controls, 두바이',
+                dddd: "2013년 1월 28일",
+                jjd: "“Omar는 자신의 부서 내에서 문제에 대한 해결책을 지속적으로 찾는 매우 헌신적인 사람입니다. 그는 관리자가 많은 양의 정보를 처리하는 데 도움이 되는 Excel 및 대화형 Excel 도구를 통해 경이로운 보고서를 작성합니다. 그는 매우 열심히 일하고 사업 단위 전체의 사람들과 관계를 발전시킵니다. 그는 자신의 목표를 달성하는 데 도움이 되도록 다른 사람들로부터 강력한 지원을 받습니다. 그는 연합을 형성합니다. 그는 자신의 목표를 달성하고 자신의 역할을 성공적으로 수행하는 데 매우 열정적입니다. Omar는 당신의 팀에 있을 수 있는 재능 있는 멤버입니다.”",
+                box: "아일랜드",
+                boxx: "독일",
+                boxxx: "아랍 에미리트",
+                home: "홈페이지",
+                ireland: "아일랜드",
+                germany: "독일",
+                uae: "홈페이지",
+                reco: "추천",
+                lang: "언어",
+                cv: "이력서 다운로드",
+                contact: "연락하다"
+            }
+        }
+    </script>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
