@@ -17,11 +17,11 @@
         <header>   
         <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
         <div class="langs">
-        <a href="#" language="english" class="active">EN</a>
-        <a href="#" language="german">DE</a>
-        <a href="#" language="arabic">AR</a>
-        <a href="#" language="spanish">ES</a>
-        <a href="#" language="korean">KO</a> 
+        <a href="#" id="english" class="active">EN</a>
+        <a href="#" id="german">DE</a>
+        <a href="#" id="arabic">AR</a>
+        <a href="#" id="spanish">ES</a>
+        <a href="#" id="korean">KO</a> 
         </div>
         <div class="toggle"></div>
         </header>
@@ -112,7 +112,7 @@
                 langs.querySelector(".active").classList.remove("active");
                 el.classList.add("active");
 
-                let attr = el.getAttribute("language")
+                let attr = el.getAttribute("id")
 
                 title.textContent = data[attr].title
                 descr.textContent = data[attr].description

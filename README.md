@@ -126,6 +126,7 @@ Omar Samman website is a 7 pages website. Each page consists of:
 - Google map box was placed at contact page
 - My logo name is fixed on the top in order to make it easy for the user to get back to the home page smoothly
 - Download CV link was put into the menu bar.
+- scrollbar feature for paragraphs was applied where it's necessary
  
 # 18. Technologies used
 
