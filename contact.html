@@ -17,11 +17,11 @@
         <header>  
         <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
         <div class="langs">
-        <a href="#" language="english" class="active">EN</a>
-        <a href="#" language="german">DE</a>
-        <a href="#" language="arabic">AR</a>
-        <a href="#" language="spanish">ES</a>
-        <a href="#" language="korean">KO</a>  
+        <a href="#" id="english" class="active">EN</a>
+        <a href="#" id="german">DE</a>
+        <a href="#" id="arabic">AR</a>
+        <a href="#" id="spanish">ES</a>
+        <a href="#" id="korean">KO</a>  
         </div>
         <div class="toggle"></div>
         </header>
@@ -32,7 +32,7 @@
         <h3 class="description">PHONE : +49 170 2671177</h3>
         <p class="ddd">E-MAIL : sammanomar@hotmail.com</p>
         <p class="subj">Availability : 24 Hours</p>
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82766.5813061477!2d10.914444104360587!3d49.58915601962625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f8c7d57c34a1%3A0x41eda32beb5c7d0!2sErlangen!5e0!3m2!1sen!2sde!4v1678625730658!5m2!1sen!2sde">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82766.5813061477!2d10.914444104360587!3d49.58915601962625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1f8c7d57c34a1%3A0x41eda32beb5c7d0!2sErlangen!5e0!3m2!1sen!2sde!4v1678625730658!5m2!1sen!2sde">
         </iframe><br>
         <p class="subjj"><em>Location</em> : Erlangen, Germany</p>
         <a class="box" href="ireland.html">ireland</a>
@@ -84,7 +84,7 @@
                 langs.querySelector(".active").classList.remove("active");
                 el.classList.add("active");
 
-                let attr = el.getAttribute("language")
+                let attr = el.getAttribute("id")
 
                 title.textContent = data[attr].title
                 descr.textContent = data[attr].description
