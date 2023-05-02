@@ -36,13 +36,14 @@ The site contains seven different pages in 5 different languages and one additio
 - Existing Features
 - Technologies used
 - Testing
+- Lists of Main Issues Discovered.
 - Validator Testing
 - Unfixed Bugs
 - Development and Deployment
 - Content
 - Media
 - Credits
-- UX
+- Additional Screenshots
 
 ## The Targeted Audience 
 
@@ -128,20 +129,20 @@ Omar Samman website is a 7 pages website. Each page consists of:
 - Download CV link was put into the menu bar.
 - Scrollbar feature for paragraphs was applied where it's necessary
  
-# 18. Technologies used
+## Technologies Used
 
 HTML
 CSS
 JS
 Testing
 
-# 19. Testing
+## Testing
 
 Test of functionality and appearance of the website has have been dealt with thru out all stages of the development phase.
 
 Test has been conducted using Google Chrome and Safari. Testing different devices and screen resolutions has been conducted using Google DevTools.
 
-## Lists of main issues discovered.
+## Lists of Main Issues Discovered.
 
 - Unclosed div and p element were discovered
 Solution: closed
@@ -155,14 +156,14 @@ Solution: media query has been created at 203px
 - Apart from these issues there have been several minor issues. The majority of these has been due to miss spelled tags, attributes and other mistakes.
 Solution: The errors were easily corrected.
 
-# 20. Validator Testing
+## Validator Testing
 
 - HTML
 No errors were were returned through all pages when passing through the official W3C Validator except the contact page.
 W3C HTML Validator
 ![](/assets/screenshots/html.png)
 
-Error at contact page with iframe at W3C HTML Validator. I couldn't fix the issue because the map is 100% responsive. I tried to fix replace the attributes at css but it didn't respond correctly. Because these attribute are from older version of html but not html5
+Error at contact page with iframe at W3C HTML Validator. I couldn't fix the issue because the map is 100% responsive. I tried to add a smiliar attributes at css but it didn't respond correctly. Because these attribute are from older version of html but not html5
 ![](/assets/screenshots/usolved.png)
 
 
@@ -183,10 +184,11 @@ Home page
 
 ## Unfixed Bugs
 
-All known bugs in this section has been moved to the section Testing with solution when they have been solved. Last known bug solved on 2022-03-16. No more testing will be conducted now and the project will be submitted.
+Error at contact page with iframe at W3C HTML Validator. I couldn't fix the issue because the map is 100% responsive. I tried to add a smiliar attributes at css but it didn't respond correctly. Because these attribute are from older version of html but not html5
+![](/assets/screenshots/usolved.png)
 
 
-# 22. Development and Deployment
+## Development and Deployment
 
 The development environment used for this project was GitPod. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod environment was created using a template provided by Code Institute.
 
@@ -202,12 +204,12 @@ At the ”Source” section choose ”main” as Branch and root as folder and c
 The website will deploy and the pages refreshes to provide the live link to the project.
 The live link can be found here - https://sammanomar.github.io/project11/
 
-# 23. Content
+## Content
 
 All text content on this site has been produced by the author of the project and is not fictional. It represents my real life career history and up to date portfolio.
-The design of the project is inspired by Code Institutes ”Love Running” and coffeeshop in Dublin projects. Code has been borrowed from the two projects.
+The design of the project is inspired by Code Institutes ”Love Running” and coffeeshop in Dublin projects.
 
-# 24. Media
+## Media
 
 All videos are licensed under a broad commercial license that allows them to be used in this project (Named ”P1”). The license allows usage for public purposes.
 
@@ -215,7 +217,7 @@ Link to license agreement
 https://pexels.com
 
 
-# 25. Credits
+## Credits
 
 For code inspiration, design inputs, help and advice. Many thanks to:
 
@@ -232,7 +234,7 @@ https://glyphs.co
 
 And all the content in HTML-Essentials, CSS-Essentials and the Walkthrough project ”Love Running” that has provided inspiration and knowledge.
 
-## 5 additional screenshots
+## 7 additional Screenshots
 
 ![](/assets/screenshots/ireland.png)
 ![](/assets/screenshots/germany.png)
@@ -243,7 +245,4 @@ And all the content in HTML-Essentials, CSS-Essentials and the Walkthrough proje
 ![](/assets/screenshots/contact.png)
 
 
-
-Best regards
-
-Back to top
+Thanks

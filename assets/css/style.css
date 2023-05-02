@@ -192,7 +192,7 @@ header ul
   color: #03a9f4; 
 }
 
-/* added */
+/* remove hyperlink */
 header a {
   text-decoration: none;
 }
@@ -343,54 +343,5 @@ header .logo
 .showcase.active
 {
   right: 100px;
-}
-}
-
-/*@media (max-width: 150px)/*
-{
-.showcase,
-.showcase header
-{
-  padding: 8px;
-}
-.text h2
-{
-  font-size: 0.5em;
-}
-.text h3
-{
-  font-size: 0.3em;
-}
-.text a
-{
-  font-size: 0.3em;
-  padding: 2px 5px;
-  margin-top: 2px;
-  letter-spacing: 1px;
-}
-header .logo
-{
-  font-size: 0.5em;
-}
-.text p
-{
-  font-size: 0.6em;
-}
-.langs
-{
-  font-size: 0.6em;
-}
-.menu
-{
-  width: 50px;
-}
-.menu ul li a
-{
-  font-size: 7px;
-  font-weight: 500;
-}
-.showcase.active
-{
-  right: 50px;
 }
 }
