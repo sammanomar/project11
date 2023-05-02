@@ -164,26 +164,27 @@ Solution: The errors were easily corrected.
 # 20. Validator Testing
 
 - HTML
-No errors were returned when passing through the official W3C Validator
-W3C HTML Validator.
-![](/assets/screenshots/home.png)
-![](/assets/screenshots/career.png)
-![](/assets/screenshots/contact.png.
+No errors were were returned through all pages when passing through the official W3C Validator except the contact page.
+W3C HTML Validator
+![](/assets/screenshots/html.png)
+
+Error at contact page at W3C HTML Validator
+![](/assets/screenshots/usolved.png)
+
 
 - CSS
 No errors were returned when passing through the official (Jigsaw validator)
 Jigsaw validator
-![](/assets/screenshots/csstest.png)
+![](/assets/screenshots/css.png)
 
-Lighthouse testing
-Lighthouse testing score
+- Lighthouse testing
+Home page
 ![](/assets/screenshots/lighthouse.png)
 
-# 21. Unfixed Bugs
+## Unfixed Bugs
 
 All known bugs in this section has been moved to the section Testing with solution when they have been solved. Last known bug solved on 2022-03-16. No more testing will be conducted now and the project will be submitted.
 
-Back to top
 
 # 22. Development and Deployment
 
