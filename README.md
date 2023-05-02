@@ -9,7 +9,7 @@ This website is meant for:
 - Employers who are looking for my skill-set
 - Customers who need my services
 
-![](assets/screenshots/.png)
+![](assets/screenshots/home.png)
 
 The site contains seven different pages in 5 different languages and one additional link to download CV:
 
@@ -146,17 +146,11 @@ Test has been conducted using Google Chrome and Safari. Testing different device
 - Unclosed div and p element were discovered
 Solution: closed
 
-- Download CV links didn't work correctly because of some spaces
-Solution: spaces were removed and it function correctly
+- false language attribute was found in the navigation a element.
+Solution: id attribute was used
 
-- Unnecessary sections wrapped ids were added wrongly
-Solution: sections removed and the commands were wrapped with divs instead
-
-- Duplicated ids were added wrong
-Solution: classes were added to override the duplicated ids error
-
-- Top menu disappears even though its fixed.
-Solution: Had to use z-index to keep the menu on top of all sections and elements, value set to 20
+- The design was not responsive at max-wide of 203px.
+Solution: media query has been created at 203px
 
 - Apart from these issues there have been several minor issues. The majority of these has been due to miss spelled tags, attributes and other mistakes.
 Solution: The errors were easily corrected.
@@ -168,7 +162,7 @@ No errors were were returned through all pages when passing through the official
 W3C HTML Validator
 ![](/assets/screenshots/html.png)
 
-Error at contact page at W3C HTML Validator
+Error at contact page with iframe at W3C HTML Validator. I couldn't fix the issue because the map is 100% responsive. I tried to fix replace the attributes at css but it didn't respond correctly. Because these attribute are from older version of html but not html5
 ![](/assets/screenshots/usolved.png)
 
 
@@ -179,7 +173,13 @@ Jigsaw validator
 
 - Lighthouse testing
 Home page
-![](/assets/screenshots/lighthouse.png)
+![](/assets/screenshots/lhhome.png)
+![](/assets/screenshots/lhireland.png)
+![](/assets/screenshots/lhgermany.png)
+![](/assets/screenshots/lhuae.png)
+![](/assets/screenshots/lhrecommendations.png)
+![](/assets/screenshots/lhlanguage.png)
+![](/assets/screenshots/lhcontact.png)
 
 ## Unfixed Bugs
 
@@ -234,11 +234,13 @@ And all the content in HTML-Essentials, CSS-Essentials and the Walkthrough proje
 
 ## 5 additional screenshots
 
-![](/assets/screenshots/footeri.png)
-![](/assets/screenshots/headerii.png)
-![](/assets/screenshots/footerii.png)
-![](/assets/screenshots/headeriii.png)
-![](/assets/screenshots/footeriii.png)
+![](/assets/screenshots/ireland.png)
+![](/assets/screenshots/germany.png)
+![](/assets/screenshots/uae.png)
+![](/assets/screenshots/uae.png)
+![](/assets/screenshots/recommendations.png)
+![](/assets/screenshots/language.png)
+![](/assets/screenshots/contact.png)
 
 
 
