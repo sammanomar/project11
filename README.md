@@ -43,7 +43,7 @@ The site contains seven different pages in 5 different languages and one additio
 - Content
 - Media
 - Credits
-- Additional Screenshots
+- 6 Additional Screenshots
 
 ## The Targeted Audience 
 
@@ -185,7 +185,7 @@ Home page
 ## Unfixed Bugs
 
 Error at contact page with iframe at W3C HTML Validator. I couldn't fix the issue because the map is 100% responsive. I tried to add a smiliar attributes at css but it didn't respond correctly. Because these attribute are from older version of html but not html5
-![](/assets/screenshots/usolved.png)
+![](/assets/screenshots/unsolved.png)
 
 
 ## Development and Deployment
@@ -234,11 +234,10 @@ https://glyphs.co
 
 And all the content in HTML-Essentials, CSS-Essentials and the Walkthrough project ”Love Running” that has provided inspiration and knowledge.
 
-## 7 additional Screenshots
+## 6 additional Screenshots
 
 ![](/assets/screenshots/ireland.png)
 ![](/assets/screenshots/germany.png)
-![](/assets/screenshots/uae.png)
 ![](/assets/screenshots/uae.png)
 ![](/assets/screenshots/recommendations.png)
 ![](/assets/screenshots/language.png)
