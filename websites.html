@@ -14,25 +14,30 @@
 <body>
     <!-- logo and languages -->
     <section class="showcase">
-        <header>  
+        <header>   
         <a href="index.html"><h2 class="logo">Omar Samman</h2></a>
         <div class="langs">
         <a href="#" id="english" class="active">EN</a>
         <a href="#" id="german">DE</a>
         <a href="#" id="arabic">AR</a>
         <a href="#" id="spanish">ES</a>
-        <a href="#" id="korean">KO</a>  
+        <a href="#" id="korean">KO</a> 
         </div>
         <div class="toggle"></div>
         </header>
-        <video src="assets/videos/main.mp4" muted loop autoplay></video>
+        <video src="assets/videos/language.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <div class="text">
-        <h2 class="title">Polyglot and Data Expert</h2> 
-        <h3 class="description">KPI, CODING & DATA VISUALIZATION</h3>
-        <p class="ddd">TECHNICAL SKILLS: Machine Learning, AI, HTML, CSS, JS, PYTHON, SQL, SAS, SMIS, ISCALA, HFM, ORACLE, OPERA, INFOR, PROFIT, 
-                       Tableau, Power BI, SAP, SPSS, GitHub, GitPod, Heroku, Bootstrap, VSC, Codeanywhere, BI, KPI, Data Analytics, Shortcut,
-                       Windward</p>
+        <h3 class="description">Technology Blog</h3>
+        <p class="dd"><a href="https://bllog-30ebbac877ad.herokuapp.com" target="_blank">https://bllog-30ebbac877ad.herokuapp.com</a></p>
+        <h3 class="ddescription">Disease Prediction System</h3>
+        <p class="ddd"><a href="https://predict-disease-6e1bbf9de2b5.herokuapp.com" target="_blank">https://predict-disease-6e1bbf9de2b5.herokuapp.com</a></p>
+        <h3 class="dddescription">WaveFinder Website</h3>
+        <p class="dddd"><a href="https://sammanomar.github.io/jul-hackathon/" target="_blank">https://sammanomar.github.io/jul-hackathon/</a></p>
+        <h3 class="ddddescription">Puzzle Game</h3>
+        <p class="ddddd"><a href="https://sammanomar.github.io/project2" target="_blank">https://sammanomar.github.io/project2</a></p>
+        <h3 class="dddddescription">2 Players Connect Four game</h3>
+        <p class="dddddd"><a href="https://project3-connect-four.herokuapp.com" target="_blank">https://project3-connect-four.herokuapp.com</a></p>
         <a class="box" href="ireland.html">ireland</a>
         <a class="boxx" href="germany.html">germany</a>
         <a class="boxxx" href="uae.html">UAE</a>
@@ -57,12 +62,19 @@
         </ul>
     </div>    
     <!-- switching between languages script -->
-    <script>
+    <!-- <script>
         let langs = document.querySelector(".langs"),
             link = document.querySelectorAll("a"),
-            title = document.querySelector(".title"),
             descr = document.querySelector(".description"),
-            dat = document.querySelector(".ddd"),
+            dat = document.querySelector(".dd"),
+            ddescr = document.querySelector(".ddescription"),
+            ddat = document.querySelector(".ddd"),
+            dddescr = document.querySelector(".dddescription"),
+            dddat = document.querySelector(".dddd"),
+            ddddescr = document.querySelector(".ddddescription"),
+            ddddat = document.querySelector(".ddddd"),
+            dddddescr = document.querySelector(".dddddescription"),
+            dddddat = document.querySelector(".dddddd"),
             box = document.querySelector(".box"),
             boxx = document.querySelector(".boxx"),
             boxxx = document.querySelector(".boxxx"),
@@ -83,9 +95,16 @@
 
                 let attr = el.getAttribute("id")
 
-                title.textContent = data[attr].title
                 descr.textContent = data[attr].description
-                dat.textContent = data[attr].ddd
+                dat.textContent = data[attr].dd
+                ddescr.textContent = data[attr].ddescription
+                ddat.textContent = data[attr].ddd
+                dddescr.textContent = data[attr].dddescription
+                dddat.textContent = data[attr].dddd
+                ddddescr.textContent = data[attr].ddddescription
+                ddddat.textContent = data[attr].ddddd
+                dddddescr.textContent = data[attr].dddddescription
+                dddddat.textContent = data[attr].dddddd
                 box.textContent = data[attr].box
                 boxx.textContent = data[attr].boxx
                 boxxx.textContent = data[attr].boxxx
@@ -103,9 +122,16 @@
 
         let data = {
             arabic: {
-                title: "متعدد اللغات و خبير معلومات",
-                description: "مؤشرات الأداء الرئيسية والترميز وعرض البيانات",
-                ddd: "المهارات التقنية: Machine Learning, AI, HTML, CSS, JS, PYTHON, SQL, SAS, SMIS, ISCALA, HFM, ORACLE, OPERA, INFOR, PROFIT, Tableau, Power BI, SAP, SPSS, GitHub, GitPod, VSC, Codeanywhere, BI, KPI, Data Analytics, Shortcut, Windward",
+                description: "الإنكليزية",
+                dd: "يجيد (القراءة والكتابة والاستماع والتحدث)",
+                ddescription: "الألمانية",
+                ddd: "يجيد (القراءة والكتابة والاستماع والتحدث)",
+                dddescription: "العربية",
+                dddd: "اللغة الأم",
+                ddddescription: "الإسبانية",
+                ddddd: "مبتدئ",
+                dddddescription: "الكورية",
+                dddddd: "مبتدئ",
                 box: "إيرلندا",
                 boxx: "ألمانيا",
                 boxxx: "الإمارات",
@@ -120,9 +146,16 @@
                 contact: "التواصل"
             },
             english: {
-                title: "Polyglot and Data Expert",
-                description: "KPI, CODING & DATA VISUALIZATION",
-                ddd: "TECHNICAL SKILLS: Machine Learning, AI, HTML, CSS, JS, PYTHON, SQL, SAS, SMIS, ISCALA, HFM, ORACLE, OPERA, INFOR, PROFIT, Tableau, Power BI, SAP, SPSS, GitHub, GitPod, Heroku, Bootstrap, VSC, Codeanywhere, BI, KPI, Data Analytics, Shortcut, Windward",
+                description: "English",
+                dd: "Fluent (Reading, writing, listening & speaking)",
+                ddescription: "German",
+                ddd: "Fluent (Reading, writing, listening & speaking)",
+                dddescription: "Arabic",
+                dddd: "Mother Tongue",
+                ddddescription: "Spanish",
+                ddddd: "Beginner",
+                dddddescription: "Korean",
+                dddddd: "Beginner",
                 box: "Ireland",
                 boxx: "Germany",
                 boxxx: "UAE",
@@ -137,9 +170,16 @@
                 contact: "Contact"
             },
             german: {
-                title: "Mehrsprachig und Datenexperte",
-                description: 'KPI, CODIERUNG & DATENVISUALISIERUNG',
-                ddd: "TECHNISCHE FÄHIGKEITEN: Machine Learning, AI, HTML, CSS, JS, PYTHON, SQL, SAS, SMIS, ISCALA, HFM, ORACLE, OPERA, INFOR, PROFIT, Tableau, Power BI, SAP, SPSS, GitHub, GitPod, Heroku, Bootstrap, VSC, Codeanywhere, BI, KPI, Data Analytics, Shortcut, Windward",
+                description: 'Englisch',
+                dd: "Fließend (Lesen, Schreiben, Hören und Sprechen)",
+                ddescription: 'Deutsch',
+                ddd: "Fließend (Lesen, Schreiben, Hören und Sprechen)",
+                dddescription: "Arabisch",
+                dddd: "Muttersprache",
+                ddddescription: "Spanisch",
+                ddddd: "Anfänger",
+                dddddescription: "koreanisch",
+                dddddd: "Anfänger",
                 box: "Irland",
                 boxx: "Deutschland",
                 boxxx: "VAE",
@@ -154,9 +194,16 @@
                 contact: "Kontakt"
             },
             spanish: {
-                title: "Polígloto Y experto en datos",
-                description: 'KPI, CODIFICACIÓN Y VISUALIZACIÓN DE DATOS',
-                ddd: "HABILIDADES TÉCNICAS: Machine Learning, AI, HTML, CSS, JS, PYTHON, SQL, SAS, SMIS, ISCALA, HFM, ORACLE, OPERA, INFOR, PROFIT, Tableau, Power BI, SAP, SPSS, GitHub, GitPod, Heroku, Bootstrap, VSC, Codeanywhere, BI, KPI, Data Analytics, Shortcut, Windward",
+                description: 'Inglés',
+                dd: "Fluidez (leer, escribir, escuchar y hablar)",
+                ddescription: 'Alemán',
+                ddd: "Fluidez (leer, escribir, escuchar y hablar)",
+                dddescription: "árabe",
+                dddd: "Lengua materna",
+                ddddescription: "Español",
+                ddddd: "Principiante",
+                dddddescription: "coreano",
+                dddddd: "Principiante",
                 box: "Irlanda",
                 boxx: "Alemania",
                 boxxx: "UÁE",
@@ -171,9 +218,16 @@
                 contact: "Contacto"
             },
             korean: {
-                title: "다중 언어 및 데이터 전문가",
-                description: 'KPI, 코딩 및 데이터 시각화',
-                ddd: "기술 능력: Machine Learning, AI, HTML, CSS, JS, PYTHON, SQL, SAS, SMIS, ISCALA, HFM, ORACLE, OPERA, INFOR, PROFIT, Tableau, Power BI, SAP, SPSS, GitHub, GitPod, Heroku, Bootstrap, VSC, Codeanywhere, BI, KPI, Data Analytics, Shortcut,Windward",
+                description: '영어',
+                dd: "유창함 (읽기, 쓰기, 듣기 및 말하기)",
+                ddescription: '독일어',
+                ddd: "유창함 (읽기, 쓰기, 듣기 및 말하기)",
+                dddescription: "아랍어",
+                dddd: "모국어",
+                ddddescription: "스페인어",
+                ddddd: "초보자",
+                dddddescription: "한글",
+                dddddd: "초보자",
                 box: "아일랜드",
                 boxx: "독일",
                 boxxx: "아랍 에미리트",
@@ -188,7 +242,7 @@
                 contact: "연락하다"
             }
         }
-    </script>
+    </script> -->
     <!-- slide menu script -->
     <script>
         const menuToggle = document.querySelector('.toggle');

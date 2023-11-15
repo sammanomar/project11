@@ -76,6 +76,7 @@
         <li><a class= "reco" href="recommendations.html">Recommendations</a></li>
         <li><a class= "lang" href="language.html">Languages</a></li>
         <li><a class= "cv" href="assets/images/utd.pdf" target="_blank">Download CV</a></li>
+        <li><a class="web" href="websites.html">My Websites</a></li>
         <li><a class="contact" href="contact.html">Contact</a></li>
         </ul>
     </div>    
@@ -105,6 +106,7 @@
             reco = document.querySelector(".reco"),
             lang = document.querySelector(".lang"),
             cv = document.querySelector(".cv"),
+            web = document.querySelector(".web"),
             contact = document.querySelector(".contact");
 
         link.forEach(el=>{
@@ -136,6 +138,7 @@
                 lang.textContent = data[attr].lang
                 reco.textContent = data[attr].reco
                 cv.textContent = data[attr].cv
+                web.textContent = data[attr].web
                 contact.textContent = data[attr].contact
             })
         })
@@ -164,6 +167,7 @@
                 reco: "التوصيات",
                 lang: "اللغات",
                 cv: "تنزيل السيرة الذاتية",
+                web: "مواقعي الإلكترونية",
                 contact: "التواصل"
             },
             english: {
@@ -189,6 +193,7 @@
                 reco: "Recommendations",
                 lang: "Languages",
                 cv: "Download CV",
+                web: "My Websites",
                 contact: "Contact"
             },
             german: {
@@ -214,6 +219,7 @@
                 reco: "Empfehlungen",
                 lang: "Sprachen",
                 cv: "LL herunterladen",
+                web: "Meine Websites",
                 contact: "Kontakt"
             },
             spanish: {
@@ -239,6 +245,7 @@
                 reco: "Recomendaciones",
                 lang: "Idiomas",
                 cv: "Descargar CV",
+                web: "Mis sitios web",
                 contact: "Contacto"
             },
             korean: {
@@ -264,6 +271,7 @@
                 reco: "추천",
                 lang: "언어",
                 cv: "이력서 다운로드",
+                web: "내 웹사이트",
                 contact: "연락하다"
             }
         }
