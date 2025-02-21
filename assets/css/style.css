@@ -36,7 +36,7 @@ header ul
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background: url(https://img.icons8.com/?size=100&id=OTxpMqWbm71F&format=png&color=FFFFFF);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
@@ -45,7 +45,7 @@ header ul
 /* slide menu open */
 .toggle.active
 {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background: url(https://img.icons8.com/?size=100&id=85108&format=png&color=FFFFFF);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
